@@ -36,10 +36,11 @@ class Rectangle extends Shape {
 
 }
 
+const logShapeArea = (logTitle: string, shape: Shape) => console.log(logTitle, shape.getArea())
 
 const circle = new Circle('red', 5)
 const rectangle = new Rectangle('blue', 4, 6)
 
-console.log('Circle Area',circle.getArea())
-console.log('Rectangle Area',rectangle.getArea())
+logShapeArea('Circle Area', circle)
+logShapeArea('Rectangle Area', rectangle)
 
